@@ -1,0 +1,32 @@
+.modal_window
+{
+    margin: auto;
+    position: fixed; top: 50%; left: 0; right: 0;
+    width: 90%;
+    height: 90%;
+    overflow-y: auto;
+    background: #fff;
+    transform: translateY(-50%);
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+
+    display: none;
+}
+
+.visible
+{
+    display: block;
+}
+
+
+.close_modal
+{
+    position: absolute;
+    top: 20px; right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close_modal:hover
+{
+    color: red;
+}
