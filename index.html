@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <h3>Todo App</h3>
+                <button class="btn green add_todo">Add todo</button>
+                <button class="btn red remove_selected" disabled>Remove selected</button>
+                <button class="btn grey sort_btn">Sort - <span>DESC</span></button>
+                <hr>
+
+                <div class="collection">
+                    
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal_window">
+        <i class="material-icons close_modal">close</i>
+
+        <div class="row">
+            <div class="col s6 offset-s3">
+                <h3>Add Todo</h3>
+                <form action="">
+                    <label>Todo title: 
+                        <input type="text" class="t_title" placeholder="Todo title" minlength="3" required>
+                    </label>
+                    <label>Todo text: 
+                        <input type="text" class="t_text" placeholder="Todo text">
+                    </label>
+                    <label>Todo date: 
+                        <input type="date" class="t_date" >
+                    </label>
+                    <button type="button" class="btn blue" id="add_user">Add user</button> 
+                    
+                    <div class="users">
+                       
+                        
+                    </div>
+                    <hr> 
+                    <button class="btn green">Add todo</button>
+                   
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
